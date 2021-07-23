@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    color: #5f595f;
+    font-size: 15px;
+    line-height: 25px;
+}
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+section {
+    padding: 50px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    margin: 10px 0;
+
+}
+#iconprofil {
+    width: 30px; 
+    height: 30px;
+}
+h4 {
+    margin: 0 ;
+    font-size: 35px;
+    font-weight: normal;
+    display: inline;
+    color: #01b4d9;
+    line-height: normal;
+}
+nav #btn {
+    background-color: white;
+    border-radius: 0;
+    border: solid 1px #01b4d9;
+    margin:  10px 0;
+    width: 40px;
+}
+nav a {
+    display: inline-block;
+    color: #01b4d9;
+    height: 100%;
+    padding: 10px 12px;
+}
+nav #btn ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style: none;
+    background-color: white;
+}
+nav ul li {
+    width: 85px;
+}
+nav ul a {
+    height: 100%;
+    padding-top: 18px;
+}
+nav #btn > a:hover ~ ul{
+    display: block;
+    width: 100px;
+}
+nav ul a:hover {
+    background-color: #01b4d9;
+    color: white;
+}
+
+@media screen and (min-width: 850px){
+    nav #btn ul {
+        display: block;
+        top: 0;
+        height: 60px;
+    }
+    nav #btn {
+        border: none;
+        width: 0;
+    }
+    nav #btn > a {
+        display: none;
+    }
+    nav ul li {
+        display: inline-block;
+        height: 100%;
+    }
+}
+.ecrantitre {
+    background-image: url(images/close-up-image-of-programer-working-at-his-desk-in-office-min.jpg);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    color: white;
+    padding: 50px 0;
+}
+.ecrantitre p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 26px;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 18px;
+    letter-spacing: 10px;
+}
+.ecrantitre ul, footer ul {
+    padding: 0;
+    margin: 45px auto 35px;
+}
+.ecrantitre ul li, footer ul li {
+    display: inline-block;
+}
+.socialicon {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 7px;
+    padding: 6px;
+}
+.socialicon a{
+    font-size: 17px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.ecrantitre button {
+    border: none;
+    border-radius: 5px;
+    background-color: #00b4d9;
+    padding: 16px 32px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 850px){
+    .ecrantitre {
+        height: 600px;
+        padding: 100px 0;
+    }
+    h1 {
+        font-size: 50px;
+        margin: 40px 0;
+    }
+    .ecrantitre p {
+        font-size: 40px;
+    }
+    .ecrantitre ul{
+        margin: 60px auto;
+    }
+}
+#present {
+    display: block;
+}
+@media screen and (min-width: 850px) {
+    #present {
+        display: flex;
+    }
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 0 15px #aaa;
+    padding: 10px;
+    max-width: 100%;
+    width: 410px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 35px;
+}
+#coordonnees ul{
+    list-style: none;
+    padding: 0;
+}
+#coordonnees li {
+    line-height: 35px;
+}
+section b {
+    color: black;
+}
+section button {
+    padding: 15px 30px;
+    background-color: #00b4d9;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (min-width: 850px) {
+    #coordonnees {
+        margin-left: 25px;
+        width: 60%;
+    }
+}
+#coordonnees button a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.contact {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+.darker {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 25px 0;
+}
+h3 {
+    color: black;
+}
+.darker .card {
+    width: 320px;
+    padding: 25px 0;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+@media screen and (min-width: 850px){
+    .darker .card{
+        display: inline-block;
+        margin: 10px 10px;
+        width: 240px;
+    }
+}
+h5 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.darker .card img {
+    margin: 20px 0;
+    width: 70px;
+}
+footer {
+    width: 100%;
+    background-color: #1c1c20;
+    text-align: center;
+    padding: 45px;
+    color: white;
+}
+#return {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #00b4d9;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    padding-top: 6px;
+    box-shadow: 0 0 8px black;
+    text-align: center;
+}
+#return a {
+    font-size: 35px;
+}
